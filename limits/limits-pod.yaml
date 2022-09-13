@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: limits-pod
+  namespace: limits
+  deletionGracePeriodSeconds: 0
+spec:
+  containers:
+    - name: limits-container
+      image: limits:v1
+      imagePullPolicy: IfNotPresent
+
